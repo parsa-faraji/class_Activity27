@@ -4,11 +4,16 @@
 //
 //  Created by Parsa Faraji on 11/8/24.
 //
-#include <iostream>
-#include <string>
+
 
 #ifndef BookStore_h
 #define BookStore_h
+
+#include <iostream>
+#include <string>
+#include <vector>
+#include "Book.h"
+using namespace std;
 
 struct BookStore{
     string name;
@@ -17,6 +22,11 @@ struct BookStore{
     string operatingHours;
     string address;
     string phoneNumber;
+    vector<Book> booksList;
 };
+
+ostream& operator<<(ostream& stream, const BookStore& bookStore);
+
+void addBook(BookStore& bookStore, Book& book);
 
 #endif /* BookStore_h */

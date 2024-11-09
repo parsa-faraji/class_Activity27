@@ -7,6 +7,9 @@
 
 #ifndef Book_h
 #define Book_h
+#include <iostream>
+#include "Date.h"
+using namespace std;
 
 struct Book {
     string title;
@@ -15,7 +18,10 @@ struct Book {
     Date releaseDate;
     string genre;
     double price;
-    
-}
+};
+
+bool operator==(const Book& book1, const Book& book2);
+
+ostream& operator<<(ostream& stream, const Book& book);
 
 #endif /* Book_h */
