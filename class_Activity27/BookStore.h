@@ -15,7 +15,10 @@
 #include "Book.h"
 using namespace std;
 
+// create bookstore structure
 struct BookStore{
+    
+    //attributes
     string name;
     string owner;
     string operatingDays;
@@ -25,8 +28,10 @@ struct BookStore{
     vector<Book> booksList;
 };
 
+// operator overloading for output
 ostream& operator<<(ostream& stream, const BookStore& bookStore);
 
+// addBook method
 void addBook(BookStore& bookStore, Book& book);
 
 #endif /* BookStore_h */

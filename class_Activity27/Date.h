@@ -10,11 +10,15 @@
 #include <iostream>
 using namespace std;
 
+// create structure for date
+
 struct Date {
     int year;
     int month;
     int day;
 };
+
+// operator overloading
 
 bool operator==(const Date& date1, const Date& date2);
 

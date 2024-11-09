@@ -11,6 +11,7 @@
 #include "Date.h"
 using namespace std;
 
+// create struct for book
 struct Book {
     string title;
     string author;
@@ -18,7 +19,10 @@ struct Book {
     Date releaseDate;
     string genre;
     double price;
+    int quantity;
 };
+
+// operator overloading
 
 bool operator==(const Book& book1, const Book& book2);
 

@@ -18,10 +18,12 @@ int main() {
     Date date = {2024, 12, 12};
     
     // initialize Book struct
-    Book book1 = {"Moby-Dick", "Herman Melville", "1241252", date, "Classic", 12.5};
+    Book book1 = {"Moby-Dick", "Herman Melville", "1241252", date, "Classic", 12.5, 1};
     
-    //
+    // add book1 to bookstore
     addBook(bookStore1, book1);
+    
+    // output bookstore and its booksList
     cout << bookStore1;
 
 }
